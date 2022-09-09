@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+Display:wght@300&family=Shadows+Into+Light&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Smooch&display=swap");
+
+.wald__title {
+  position: absolute;
+  top: 200px;
+}
+
+.wald__title {
+  font-size: 111px;
+  top: 5%;
+  justify-content: center;
+  text-align: center;
+  margin: 0 auto;
+  color: rgb(9, 92, 64);
+  padding-left: 40rem;
+}
+.gallery {
+  position: relative;
+  overflow: hidden;
+  width: 480px;
+  width: 100%;
+  padding-inline: 5rem;
+  padding-top: 2rem;
+}
+
+.textcols {
+  white-space: nowrap;
+  font-size: 0;
+}
+.textcols-item {
+  font-family: "Noto Serif Display", serif;
+  font-family: "Shadows Into Light", cursive;
+  white-space: normal;
+  display: inline-block;
+  width: 27%;
+  vertical-align: top;
+  padding-left: 3%;
+  margin-right: 4%;
+  font-size: 30px;
+}
+.textcols .textcols-item:last-child {
+  margin-right: 0;
+}
