@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+Display:wght@300&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  font-family: "Shadows Into Light", cursive;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: repeating-linear-gradient(
+    38deg,
+    rgb(8, 37, 243),
+    #d51c1c00 980px
+  );
+  margin: 0;
+}
+
+.login {
+  /* background: repeating-linear-gradient(45deg, #0825f3, transparent 100px); */
+  background: linear-gradient(30deg, #2c2f46, transparent);
+  padding: 2rem;
+  border-radius: 18px;
+  width: 300px;
+  text-align: center;
+}
+.row.row:not(:last-child) {
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+}
+
+.input {
+  border: none;
+  outline: none;
+  border-radius: 10px;
+}
+.button {
+  background: repeating-linear-gradient(47deg, #0825f3, transparent 52px);
+  border-radius: 100px;
+  padding: 1rem 2rem;
+  border: none;
+  cursor: pointer;
+}
+.input-containr {
+  background: repeating-linear-gradient(45deg, #0825f3, transparent 100px);
+  font-size: 1.5rem;
+  padding: 1rem;
+  border-radius: 100px;
+}
+
+.title {
+  margin: 0;
+}
+
+.input::placeholder {
+  color: rgb(15, 103, 7);
+}
