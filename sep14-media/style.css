@@ -1,0 +1,45 @@
+:root {
+  --sidebar-width: 250px;
+}
+.sidebar {
+  width: var(--sidebar-width);
+  height: 100%;
+  background: rgb(150, 146, 146);
+  position: fixed;
+  top: 0;
+  left: 0;
+  font-size: 2rem;
+  color: antiquewhite;
+  transition: all 0.5s ease-out;
+}
+main {
+  margin-left: 250px;
+  padding: 2rem;
+}
+.burger {
+  display: none;
+  transition: all 0.5s ease-out;
+}
+@media (max-width: 768px) {
+  .sidebar {
+    transform: translateX(calc(var(--sidebar-width) * -1));
+  }
+  .sidebar--open {
+    transform: none;
+  }
+  .burger--open {
+    transform: translateX(var(--sidebar-width));
+  }
+  main {
+    margin: 0;
+  }
+  .burger {
+    display: inline;
+    position: fixed;
+    bottom: 10vh;
+    left: 0;
+    background: #fff;
+    border: 2px solid;
+    font-size: 2rem;
+  }
+}
