@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Dirt&display=swap");
+
+body {
+  font-family: "Rubik Dirt", cursive;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: center;
+  background: url(pr.jpg);
+}
+
+.calendar {
+  list-style: none;
+  padding: 0;
+  width: 350px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.calendar__item {
+  list-style: none;
+  width: calc(100% / 7);
+  aspect-ratio: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calendar__item--small {
+  font-size: 0.75rem;
+}
+.calendar__item--green {
+  color: rgb(119, 109, 67);
+}
+.calendar__item--active {
+  background: rgb(22, 106, 12);
+  color: rgb(202, 227, 60);
+}
+.calendar__item:not(.calendar__item--small):hover {
+  background: rgb(77, 116, 18);
+  cursor: pointer;
+}
