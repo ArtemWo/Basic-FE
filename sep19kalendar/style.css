@@ -8,6 +8,7 @@ body {
   align-items: flex-start;
   text-align: center;
   background: url(pr.jpg);
+  background-size: cover;
 }
 
 .calendar {
